@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/data_processing.py" line="7" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/project_pytesseract.py" line="116" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efb2ad49-5d3a-4afc-8a25-27ae6ee13dac" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/sample03.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/project_pytesseract.py" afterPath="$PROJECT_DIR$/project_pytesseract.py" />
+      <change beforePath="$PROJECT_DIR$/image_result/01GrayImage.jpg" afterPath="$PROJECT_DIR$/image_result/01GrayImage.jpg" />
+      <change beforePath="$PROJECT_DIR$/image_result/02Erosion.jpg" afterPath="$PROJECT_DIR$/image_result/02Erosion.jpg" />
+      <change beforePath="$PROJECT_DIR$/image_result/02Gradient.jpg" afterPath="$PROJECT_DIR$/image_result/02Gradient.jpg" />
+      <change beforePath="$PROJECT_DIR$/image_result/03Thresh.jpg" afterPath="$PROJECT_DIR$/image_result/03Thresh.jpg" />
+      <change beforePath="$PROJECT_DIR$/image_result/04Closing.jpg" afterPath="$PROJECT_DIR$/image_result/04Closing.jpg" />
+      <change beforePath="$PROJECT_DIR$/image_result/04Contours.jpg" afterPath="$PROJECT_DIR$/image_result/04Contours.jpg" />
+      <change beforePath="$PROJECT_DIR$/image_result/er_number.jpg" afterPath="$PROJECT_DIR$/image_result/er_number.jpg" />
+      <change beforePath="$PROJECT_DIR$/image_result/number_th.jpg" afterPath="$PROJECT_DIR$/image_result/number_th.jpg" />
+      <change beforePath="$PROJECT_DIR$/image_result/snake.jpg" afterPath="$PROJECT_DIR$/image_result/snake.jpg" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +29,21 @@
       <file leaf-file-name="project_pytesseract.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project_pytesseract.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="77" column="65" lean-forward="false" selection-start-line="77" selection-start-column="65" selection-end-line="77" selection-end-column="65" />
+            <state relative-caret-position="465">
+              <caret line="233" column="1" lean-forward="false" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image_result2.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_result2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,7 +132,6 @@
       <find>tesseract_cmd</find>
       <find>img</find>
       <find>ret</find>
-      <find>print</find>
       <find>split</find>
       <find>ExtractNumber</find>
       <find>select</find>
@@ -127,6 +145,7 @@
       <find>network</find>
       <find>gradient</find>
       <find>_load_img</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -368,11 +387,26 @@
       <option name="project" value="LOCAL" />
       <updated>1526371312113</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="asdasd">
+      <created>1526372499712</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526372499712</updated>
+    </task>
+    <task id="LOCAL-00003" summary="asdasd">
+      <created>1526373456240</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1526373456240</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="723" y="23" width="1197" height="985" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27903092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -536,14 +570,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_result2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/digits3.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -630,10 +656,18 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/image_result2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project_pytesseract.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="77" column="65" lean-forward="false" selection-start-line="77" selection-start-column="65" selection-end-line="77" selection-end-column="65" />
+        <state relative-caret-position="465">
+          <caret line="233" column="1" lean-forward="false" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>

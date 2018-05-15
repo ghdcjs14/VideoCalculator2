@@ -12,6 +12,7 @@ from dataset.mnist import load_mnist
 print(type(x_train))
 
 network = DeepConvNet()
+
 network.load_params("deep_convnet_params.pkl")
 
 sampled = 10000 # 고속화를 위한 표본추출

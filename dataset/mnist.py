@@ -12,10 +12,10 @@ import numpy as np
 
 url_base = 'http://yann.lecun.com/exdb/mnist/'
 key_file = {
-    'train_img':'train-images-idx3-ubyte.gz',
-    'train_label':'train-labels-idx1-ubyte.gz',
-    'test_img':'t10k-images-idx3-ubyte.gz',
-    'test_label':'t10k-labels-idx1-ubyte.gz'
+    'train_img':'train-images-idx3-ubyte.gz',   # 학습 셋 이미지 - 55000개의 트레이닝 이미지, 5000개의 검증 이미지
+    'train_label':'train-labels-idx1-ubyte.gz', # 이미지와 매칭되는 학습 셋 레이블
+    'test_img':'t10k-images-idx3-ubyte.gz',     # 테스트 셋 이미지 - 10000개의 이미지
+    'test_label':'t10k-labels-idx1-ubyte.gz'    # 이미지와 매칭되는 테스트 셋 레이블
 }
 
 dataset_dir = os.path.dirname(os.path.abspath(__file__))
@@ -72,12 +72,13 @@ def _convert_numpy():
     return dataset
 
 def init_mnist():
-    download_mnist()
+    #download_mnist()
     dataset = _convert_numpy()
-    print("Creating pickle file ...")
-    with open(save_file, 'wb') as f:
-        pickle.dump(dataset, f, -1)
-    print("Done!")
+    print(dataset['train_img'])
+    #print("Creating pickle file ...")
+    #with open(save_file, 'wb') as f:
+    #    pickle.dump(dataset, f, -1)
+    #print("Done!")
 
 def _change_one_hot_label(X):
     T = np.zeros((X.size, 10))

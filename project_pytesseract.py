@@ -7,10 +7,69 @@ from PIL import Image, ImageEnhance, ImageFilter
 import subprocess
 from deep_convnet import DeepConvNet
 
+# font
+FONT = cv2.FONT_HERSHEY_PLAIN
+
+calculation = '+'
+
+class Button(object):
+
+    def __init__(self, text, x, y, width, height, command=None):
+        self.text = text
+        self.x = x
+        self.y = y
+        self.width = width
+        self.height = height
+
+        self.left = x
+        self.top = y
+        self.right = x + width - 1
+        self.bottom = y + height - 1
+
+        self.hover = False
+        self.clicked = False
+        self.cntClick = 0
+        self.command = command
+
+    def handle_event(self, event, x, y, flags, param):
+        self.hover = (self.left <= x <= self.right and \
+                      self.top <= y <= self.bottom)
+
+        if self.hover and event == cv2.EVENT_LBUTTONUP:
+            self.clicked = False
+            #print(event, x, y, flags, param)
+            self.cntClick += 1
+            #print(self.cntClick)
+
+            if self.command:
+                self.command()
+
+    def draw(self, frame):
+        status = self.cntClick % 4
+        if status == 0 :
+            calculation = '+'
+            cv2.putText(frame, calculation, (40, 40), FONT, 3, (0, 0, 255), 2)
+            cv2.circle(frame, (20, 20), 10, (0, 0, 255), -1)
+        elif status == 1:
+            calculation = '-'
+            cv2.putText(frame, calculation, (40, 40), FONT, 3, (0, 255, 0), 2)
+            cv2.circle(frame, (20, 20), 10, (0, 255, 0), -1)
+        elif status == 2:
+            calculation = '*'
+            cv2.putText(frame, calculation, (40, 40), FONT, 3, (0, 255, 0), 2)
+            cv2.circle(frame, (20, 20), 10, (0, 255, 0), -1)
+        elif status == 3:
+            calculation = '%'
+            cv2.putText(frame, calculation, (40, 40), FONT, 3, (0, 255, 0), 2)
+            cv2.circle(frame, (20, 20), 10, (0, 255, 0), -1)
+
+        return calculation
+
 class Recognition:
 
      boxes = []
-     numStr = ''
+     numStr = []
+
 
      def doPreprocessing(self, imgSrc):
          # 전처리 과정1: Grayscale -> Erosion -> Resize -> Binary
@@ -100,8 +159,6 @@ class Recognition:
          network = DeepConvNet()
          network.load_params("deep_convnet_params.pkl")
 
-
-
          # show boxes...
          for box in self.boxes:
              # print(box)
@@ -114,6 +171,105 @@ class Recognition:
              #cv2.waitKey(0)
 
          #print(self.numStr)
+
+     def recognizeVideo(self):
+
+         network = DeepConvNet()
+         network.load_params("deep_convnet_params.pkl")
+
+         # create button instance
+         button = Button('QUIT', 0, 0, 100, 30)
+
+         # 전처리 과정1: Grayscale -> Erosion -> Resize -> Binary
+         # 전처리 과정2
+         # Grayscale ->  Morph Gradient -> Adaptive Threshold -> Morph Close -> HoughLinesP
+
+         capture = cv2.VideoCapture(0)
+         capture.set(3, 640)
+         capture.set(4, 480)
+         print('image width %d' % capture.get(3))
+         print('image height %d' % capture.get(4))
+
+         while (1):
+             ret, frame = capture.read()
+
+             # 1. GRAY Image로 변경
+             grayFrame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+             # 2. Erosion
+             kernel = np.ones((5, 5), np.uint8)
+             erosion = cv2.erode(grayFrame, kernel, iterations=1)
+
+             # 3. Morph Gradient : 경계 이미지 추출
+             kernel = np.ones((5, 5), np.uint8)
+             gradient = cv2.morphologyEx(erosion, cv2.MORPH_GRADIENT, kernel)
+
+             # 4. Adaptive Threshold : 잡영 제거
+             thresh = cv2.adaptiveThreshold(gradient, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY_INV, 15, 8)
+
+             # 5. Morph Close : 작은 구멍을 메우고 경계를 강화
+             kernel = np.ones((10, 10), np.uint8)
+             closing = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
+
+             # 6. Contour 추출
+             # contours는 point의 list형태. 예제에서는 사각형이 하나의 contours line을 구성하기 때문에 len(contours) = 1. 값은 사각형의 꼭지점 좌표.
+             # hierachy는 contours line의 계층 구조
+             contourFrame, contours, hierachy = cv2.findContours(closing, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+             if len(contours) > 0:
+                 for contour in contours:
+                     x, y, w, h = cv2.boundingRect(contour)
+                     #print(w, h)
+                     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 5)
+                     self.boxes.append([cv2.boundingRect(contour), cv2.resize(thresh[y:y + h, x:x + w], (28, 28))])
+                     #if h > 10 & w > 10:
+                         #cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 5)
+
+             ##Buble Sort on python
+             for i in range(len(self.boxes)):
+                 for j in range(len(self.boxes) - (i + 1)):
+                     if self.boxes[j][0][0] > self.boxes[j + 1][0][0]:
+                         temp = self.boxes[j]
+                         self.boxes[j] = self.boxes[j + 1]
+                         self.boxes[j + 1] = temp
+
+             # show boxes...
+             for box in self.boxes:
+                 # print(box)
+                 #  print(box.shape)
+                 npbox = np.array([[box[1]]])
+                 y = network.predict(npbox)
+                 # print(np.argmax(y, axis=1))
+                 self.numStr.append(np.argmax(y, axis=1))
+                 cv2.putText(frame, str(np.argmax(y, axis=1)),
+                             (box[0][0] + box[0][2]%2, box[0][1] + box[0][3] *2), # text 출력 위치
+                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+
+             # add button to frame
+             calculation = button.draw(frame)
+
+             if len(self.numStr) >= 2:
+                 cv2.putText(frame, str(eval(str(self.numStr[0][0])
+                                              + calculation + str(self.numStr[1][0])))
+                             , (100,50),
+                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2)
+
+             #print(self.numStr)
+
+             cv2.imshow('VideoCalculator', frame)
+
+             # assign mouse click to method in button instance
+             cv2.setMouseCallback("VideoCalculator", button.handle_event)
+
+             self.boxes = []
+             self.numStr = []
+
+             if cv2.waitKey(1) & 0xFF == ord('q'):
+                 break;
+
+         capture.release()
+         cv2.destroyAllWindows()
+
 
 
      def OrganizeImage(self,img_src):
@@ -220,16 +376,18 @@ class Recognition:
 
      def ExtractNumber(self,img_src):
           #결과 텍스트 파일을 열어 읽습니다.
-          txt_result = pytesseract.image_to_string(Image.open(img_src))
-          #f_number = open("image_result2.txt",'w', encoding='UTF-8', newline='')
-          #f_number.write(txt_result.replace(" ", ""))
-          #f_number.close()
+          txt_result = pytesseract.image_to_string((Image.open(img_src)))
+          print('txt_result: '+txt_result)
+          f_number = open("image_result2.txt",'w', encoding='UTF-8', newline='')
+          f_number.write(txt_result.replace(" ", ""))
+          f_number.close()
           return (txt_result)
 
 
 recogtest=Recognition()
-recogtest.doPreprocessing('images/sample03.png')
-recogtest.predictBoxes()
+recogtest.recognizeVideo()
+#recogtest.doPreprocessing('images/sample03.png')
+#recogtest.predictBoxes()
 #recogtest.OrganizeImage('images/photo_1.jpg')
-#result=recogtest.ExtractNumber('images/sample03.png')
+#result=recogtest.ExtractNumber('images/digits3.jpg')
 #print(result)

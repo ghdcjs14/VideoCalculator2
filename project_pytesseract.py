@@ -69,13 +69,12 @@ class Recognition:
          padding = 2
          image, contours, hierarchy = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
          cv2.drawContours(image, contours, -1, 255, 3)
-         print(hierarchy)
          if len(contours) > 0:
              for contour in contours:
                  x, y, w, h = cv2.boundingRect(contour)
 
                  if w>18 and h>18 and not (w>100 and h>100) :
-                     self.boxes.append(cv2.boundingRect(contour))
+                     self.boxes.append([cv2.boundingRect(contour),cv2.resize(thresh[y:y + h, x:x + w], (28, 28))])
                      #self.boxes.append(cv2.resize(thresh[y:y + h, x:x + w], (28, 28)))
                      cv2.rectangle(grayImg, (x - padding, y - padding), (x + w + padding, y + h + padding), (0, 255, 0),
                                    1)
@@ -88,10 +87,12 @@ class Recognition:
          ##Buble Sort on python
          for i in range(len(self.boxes)):
              for j in range(len(self.boxes) - (i + 1)):
-                 if self.boxes[j][0] > self.boxes[j + 1][0]:
+                 if self.boxes[j][0][0] > self.boxes[j + 1][0][0]:
                      temp = self.boxes[j]
                      self.boxes[j] = self.boxes[j + 1]
                      self.boxes[j + 1] = temp
+
+         return (Image.open('image_result/04Contours.jpg'))
 
 
      def predictBoxes(self):
@@ -105,14 +106,14 @@ class Recognition:
          for box in self.boxes:
              # print(box)
              # print(box.shape)
-             npbox = np.array([[box]])
+             npbox = np.array([[box[1]]])
              y = network.predict(npbox)
              #print(np.argmax(y, axis=1))
              self.numStr += str(np.argmax(y, axis=1))
-             cv2.imshow('box', box)
-             cv2.waitKey(0)
+             #cv2.imshow('box', box[1])
+             #cv2.waitKey(0)
 
-         print(self.numStr)
+         #print(self.numStr)
 
 
      def OrganizeImage(self,img_src):
@@ -219,16 +220,16 @@ class Recognition:
 
      def ExtractNumber(self,img_src):
           #결과 텍스트 파일을 열어 읽습니다.
-          txt_result = pytesseract.image_to_string(self.OrganizeImage(img_src))
-          f_number = open("image_result2.txt",'w', encoding='UTF-8', newline='')
-          f_number.write(txt_result.replace(" ", ""))
-          f_number.close()
+          txt_result = pytesseract.image_to_string(Image.open(img_src))
+          #f_number = open("image_result2.txt",'w', encoding='UTF-8', newline='')
+          #f_number.write(txt_result.replace(" ", ""))
+          #f_number.close()
           return (txt_result)
 
 
 recogtest=Recognition()
-recogtest.doPreprocessing('images/sample02.png')
+recogtest.doPreprocessing('images/sample03.png')
 recogtest.predictBoxes()
 #recogtest.OrganizeImage('images/photo_1.jpg')
-#result=recogtest.ExtractNumber('images/digits3.jpg')
+#result=recogtest.ExtractNumber('images/sample03.png')
 #print(result)

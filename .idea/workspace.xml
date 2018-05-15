@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efb2ad49-5d3a-4afc-8a25-27ae6ee13dac" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/trainer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data_processing.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/image01.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/image012.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/sample01.JPG" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/sample02.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/train_deepnet.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dataset/mnist.py" afterPath="$PROJECT_DIR$/dataset/mnist.py" />
-      <change beforePath="$PROJECT_DIR$/half_float_network.py" afterPath="$PROJECT_DIR$/half_float_network.py" />
-      <change beforePath="$PROJECT_DIR$/images/digits3.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/project_pytesseract.py" afterPath="$PROJECT_DIR$/project_pytesseract.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="project_pytesseract.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="project_pytesseract.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project_pytesseract.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="209" column="37" lean-forward="true" selection-start-line="209" selection-start-column="37" selection-end-line="209" selection-end-column="37" />
+            <state relative-caret-position="165">
+              <caret line="77" column="65" lean-forward="false" selection-start-line="77" selection-start-column="65" selection-end-line="77" selection-end-column="65" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -40,14 +29,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image01.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/image01.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="04Contours.jpg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="04Contours.jpg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_result/04Contours.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
@@ -379,12 +361,20 @@
       <option name="presentableId" value="Default" />
       <updated>1524802505433</updated>
     </task>
+    <task id="LOCAL-00001" summary="asdasd">
+      <created>1526371312113</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526371312113</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="723" y="23" width="1197" height="985" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27903092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27903092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -405,6 +395,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asdasd" />
+    <option name="LAST_COMMIT_MESSAGE" value="asdasd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -588,14 +582,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_deepnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/image_result/01GrayImage.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -626,24 +612,32 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_pytesseract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="209" column="37" lean-forward="true" selection-start-line="209" selection-start-column="37" selection-end-line="209" selection-end-column="37" />
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/image01.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/train_deepnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/image_result/04Contours.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_pytesseract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="77" column="65" lean-forward="false" selection-start-line="77" selection-start-column="65" selection-end-line="77" selection-end-column="65" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

@@ -75,7 +75,8 @@ class Recognition:
                  x, y, w, h = cv2.boundingRect(contour)
 
                  if w>18 and h>18 and not (w>100 and h>100) :
-                     self.boxes.append(cv2.resize(thresh[y:y + h, x:x + w], (28, 28)))
+                     self.boxes.append(cv2.boundingRect(contour))
+                     #self.boxes.append(cv2.resize(thresh[y:y + h, x:x + w], (28, 28)))
                      cv2.rectangle(grayImg, (x - padding, y - padding), (x + w + padding, y + h + padding), (0, 255, 0),
                                    1)
 
@@ -84,12 +85,21 @@ class Recognition:
 
 
          cv2.imwrite('image_result/04Contours.jpg', grayImg)
+         ##Buble Sort on python
+         for i in range(len(self.boxes)):
+             for j in range(len(self.boxes) - (i + 1)):
+                 if self.boxes[j][0] > self.boxes[j + 1][0]:
+                     temp = self.boxes[j]
+                     self.boxes[j] = self.boxes[j + 1]
+                     self.boxes[j + 1] = temp
 
 
      def predictBoxes(self):
 
          network = DeepConvNet()
          network.load_params("deep_convnet_params.pkl")
+
+
 
          # show boxes...
          for box in self.boxes:
@@ -217,7 +227,7 @@ class Recognition:
 
 
 recogtest=Recognition()
-recogtest.doPreprocessing('images/image01.png')
+recogtest.doPreprocessing('images/sample02.png')
 recogtest.predictBoxes()
 #recogtest.OrganizeImage('images/photo_1.jpg')
 #result=recogtest.ExtractNumber('images/digits3.jpg')

@@ -8,6 +8,7 @@ import gzip
 import pickle
 import os
 import numpy as np
+import cv2
 
 
 url_base = 'http://yann.lecun.com/exdb/mnist/'
@@ -61,24 +62,224 @@ def _load_img(file_name):
     print("Done")
     
     return data
-    
+
+def _load_custom_img():
+    train_dataset = np.array([])
+    train_label = np.array([])
+    test_dataset = np.array([])
+    test_label = np.array([])
+
+    # %: 나누기
+    for i in range(0,49):
+        if i%10 <= 7:
+            fname = "{}.jpg".format("%_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset = np.append(train_dataset, cv2.imread(file_path,cv2.IMREAD_GRAYSCALE).flatten())
+            train_label = np.append(train_label, 14)
+        else :
+            fname = "{}.jpg".format("%_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset = np.append(test_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label = np.append(test_label,14)
+
+    # *: 곱하기 47
+    for i in range(0,49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("*_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset = np.append(train_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label = np.append(train_label, 13)
+        else :
+            fname = "{}.jpg".format("*_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset = np.append(test_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label = np.append(test_label, 13)
+
+    # +: 더하기 36
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("+_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset = np.append(train_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label = np.append(train_label, 11)
+        else :
+            fname = "{}.jpg".format("+_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset = np.append(test_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label = np.append(test_label, 11)
+
+    # -: 빼기
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("-_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset = np.append(train_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label = np.append(train_label, 12)
+        else :
+            fname = "{}.jpg".format("-_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset = np.append(test_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label = np.append(test_label, 12)
+
+    # 0 107
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("0_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset = np.append(train_dataset,cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label = np.append(train_label, 0)
+        else :
+            fname = "{}.jpg".format("0_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset = np.append(test_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label = np.append(test_label, 0)
+
+    # 1 85
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("1_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset = np.append(train_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label = np.append(train_label, 1)
+        else :
+            fname = "{}.jpg".format("1_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset = np.append(test_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label = np.append(test_label, 1)
+
+    # 2 48
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("2_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset= np.append(train_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label= np.append(train_label, 2)
+        else :
+            fname = "{}.jpg".format("2_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset= np.append(test_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label= np.append(test_label, 2)
+
+    # 3 37
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("3_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset= np.append(train_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label= np.append(train_label, 3)
+        else :
+            fname = "{}.jpg".format("3_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset= np.append(test_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label=np.append(test_label, 3)
+
+    # 4 94
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("4_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset= np.append(train_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label= np.append(train_label, 4)
+        else :
+            fname = "{}.jpg".format("4_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset= np.append(test_dataset,cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label= np.append(test_label,4)
+
+    # 5 126
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("5_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset= np.append(train_dataset,cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label= np.append(train_label,5)
+        else :
+            fname = "{}.jpg".format("5_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset= np.append(test_dataset,cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label= np.append(test_label,5)
+
+    # 6 26
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("6_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset= np.append(train_dataset,cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label= np.append(train_label,6)
+        else :
+            fname = "{}.jpg".format("6_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset= np.append(test_dataset,cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label= np.append(test_label,6)
+
+    # 7 164
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("7_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset= np.append(train_dataset,cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label= np.append(train_label,7)
+        else :
+            fname = "{}.jpg".format("7_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset= np.append(test_dataset,cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label= np.append(test_label,7)
+
+    # 8
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("8_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset= np.append(train_dataset,cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label= np.append(train_label,8)
+        else :
+            fname = "{}.jpg".format("8_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset= np.append(test_dataset,cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label= np.append(test_label,8)
+
+    # 9
+    for i in range(0, 49):
+        if i % 10 <= 7:
+            fname = "{}.jpg".format("9_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            train_dataset= np.append(train_dataset, cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            train_label= np.append(train_label,9)
+        else :
+            fname = "{}.jpg".format("9_{0:05d}".format(i))
+            file_path = 'train_images/' + fname
+            test_dataset= np.append(test_dataset,cv2.imread(file_path, cv2.IMREAD_GRAYSCALE).flatten())
+            test_label= np.append(test_label,9)
+
+
+    return train_dataset.astype('uint8').reshape(-1,img_size), train_label, \
+           test_dataset.astype('uint8').reshape(-1,img_size), test_label
+
+
 def _convert_numpy():
     dataset = {}
-    dataset['train_img'] =  _load_img(key_file['train_img'])
-    dataset['train_label'] = _load_label(key_file['train_label'])    
-    dataset['test_img'] = _load_img(key_file['test_img'])
-    dataset['test_label'] = _load_label(key_file['test_label'])
+    #dataset['train_img'] =  _load_img(key_file['train_img'])
+    dataset['train_label'] = _load_label(key_file['train_label'])
+    #dataset['test_img'] = _load_img(key_file['test_img'])
+    #dataset['test_label'] = _load_label(key_file['test_label'])
+    #dataset2 = {}
+    #print(dataset['train_label'])
+    dataset['train_img'], dataset['train_label'], dataset['test_img'], dataset['test_label'] = _load_custom_img()
+    #print(len(dataset2['train_label']))
+    print(dataset['train_img'])
+    #print(dataset2['train_label'])
     
     return dataset
 
 def init_mnist():
     #download_mnist()
     dataset = _convert_numpy()
-    print(dataset['train_img'])
+    #print(dataset['train_img'][0])
+    #print(dataset['train_label'])
     #print("Creating pickle file ...")
-    #with open(save_file, 'wb') as f:
-    #    pickle.dump(dataset, f, -1)
-    #print("Done!")
+    with open(save_file, 'wb') as f:
+        pickle.dump(dataset, f, -1)
+    print("Done!")
 
 def _change_one_hot_label(X):
     T = np.zeros((X.size, 10))
@@ -103,14 +304,15 @@ def load_mnist(normalize=True, flatten=True, one_hot_label=False):
     -------
     (훈련 이미지, 훈련 레이블), (시험 이미지, 시험 레이블)
     """
-    if not os.path.exists(save_file):
-        init_mnist()
+    #if not os.path.exists(save_file):
+    init_mnist()
         
     with open(save_file, 'rb') as f:
         dataset = pickle.load(f)
     
     if normalize:
         for key in ('train_img', 'test_img'):
+            #print(type(dataset[key]))
             dataset[key] = dataset[key].astype(np.float32)
             dataset[key] /= 255.0
             

@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efb2ad49-5d3a-4afc-8a25-27ae6ee13dac" name="Default" comment="asdasd">
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/sample01.png" />
+    <list default="true" id="efb2ad49-5d3a-4afc-8a25-27ae6ee13dac" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/common/optimizer.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-01.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-02.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-03.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-04.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-05.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-06.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-07.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-08.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-09.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-10.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-11.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-12.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-13.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-14.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/scan-15.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/common/functions.py" afterPath="$PROJECT_DIR$/common/functions.py" />
       <change beforePath="$PROJECT_DIR$/data_processing.py" afterPath="$PROJECT_DIR$/data_processing.py" />
+      <change beforePath="$PROJECT_DIR$/dataset/mnist.pkl" afterPath="$PROJECT_DIR$/dataset/mnist.pkl" />
+      <change beforePath="$PROJECT_DIR$/dataset/mnist.py" afterPath="$PROJECT_DIR$/dataset/mnist.py" />
+      <change beforePath="$PROJECT_DIR$/image_result/01GrayImage.jpg" afterPath="$PROJECT_DIR$/image_result/01GrayImage.jpg" />
+      <change beforePath="$PROJECT_DIR$/image_result/02Erosion.jpg" afterPath="$PROJECT_DIR$/image_result/02Erosion.jpg" />
+      <change beforePath="$PROJECT_DIR$/image_result/02Gradient.jpg" afterPath="$PROJECT_DIR$/image_result/02Gradient.jpg" />
       <change beforePath="$PROJECT_DIR$/image_result/03Thresh.jpg" afterPath="$PROJECT_DIR$/image_result/03Thresh.jpg" />
-      <change beforePath="$PROJECT_DIR$/image_result2.txt" afterPath="$PROJECT_DIR$/image_result2.txt" />
-      <change beforePath="$PROJECT_DIR$/images/sample01.JPG" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/image_result/04Closing.jpg" afterPath="$PROJECT_DIR$/image_result/04Closing.jpg" />
+      <change beforePath="$PROJECT_DIR$/image_result/04Contours.jpg" afterPath="$PROJECT_DIR$/image_result/04Contours.jpg" />
       <change beforePath="$PROJECT_DIR$/project_pytesseract.py" afterPath="$PROJECT_DIR$/project_pytesseract.py" />
+      <change beforePath="$PROJECT_DIR$/train_deepnet.py" afterPath="$PROJECT_DIR$/train_deepnet.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,37 +41,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="project_pytesseract.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project_pytesseract.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="e#23#33#0" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="%_00001.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_images/%_00001.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_processing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_processing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="%_00000.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_images/%_00000.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_deepnet.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train_deepnet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-              <folding />
-            </state>
+      <file leaf-file-name="9.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/images/9.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="01GrayImage.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_result/01GrayImage.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02Erosion.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_result/02Erosion.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04Contours.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_result/04Contours.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04Closing.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_result/04Closing.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02Gradient.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_result/02Gradient.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03Thresh.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_result/03Thresh.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -64,10 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>np</find>
-      <find>cv2</find>
-      <find>jpg</find>
-      <find>Recognition</find>
       <find>number_plate</find>
       <find>area</find>
       <find>find</find>
@@ -92,8 +139,12 @@
       <find>gradient</find>
       <find>_load_img</find>
       <find>print</find>
-      <find>numStr</find>
       <find>calculation</find>
+      <find>cross_entropy_error</find>
+      <find>softmax</find>
+      <find>softmax_loss</find>
+      <find>numStr</find>
+      <find>tesserocrFrame</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,17 +167,20 @@
         <option value="$PROJECT_DIR$/common/layers.py" />
         <option value="$PROJECT_DIR$/half_float_network.py" />
         <option value="$PROJECT_DIR$/common/trainer.py" />
-        <option value="$PROJECT_DIR$/train_deepnet.py" />
-        <option value="$PROJECT_DIR$/dataset/mnist.py" />
         <option value="$PROJECT_DIR$/data_processing.py" />
+        <option value="$PROJECT_DIR$/common/optimizer.py" />
+        <option value="$PROJECT_DIR$/dataset/mnist.py" />
+        <option value="$PROJECT_DIR$/common/functions.py" />
+        <option value="$PROJECT_DIR$/train_deepnet.py" />
         <option value="$PROJECT_DIR$/project_pytesseract.py" />
+        <option value="$PROJECT_DIR$/project_pytesseract2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="791" />
+    <option name="x" value="84" />
     <option name="y" value="23" />
-    <option name="width" value="1126" />
+    <option name="width" value="1288" />
     <option name="height" value="985" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -145,7 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -162,6 +215,11 @@
             <path>
               <item name="VideoCalculator" type="b2602c69:ProjectViewProjectNode" />
               <item name="VideoCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="dataset" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VideoCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VideoCalculator" type="462c0819:PsiDirectoryNode" />
               <item name="image_result" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -173,6 +231,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -180,17 +239,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="C:\Users\hyunj\PycharmProjects\OpenCV\images" />
+      <recent name="C:\Users\hyunj\PycharmProjects\OpenCV" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/dataset" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/common" />
-      <recent name="C:\Users\hyunj\PycharmProjects\OpenCV" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="C:\Users\hyunj\PycharmProjects\OpenCV\images" />
       <recent name="C:\Users\hyunj\PycharmProjects\OpenCV" />
     </key>
   </component>
@@ -206,7 +265,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.project_pytesseract">
+  <component name="RunManager" selected="Python.project_pytesseract2">
     <configuration name="data_processing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -225,37 +284,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="generate_calssifier" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mnist" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataset" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="OpenCV" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_calssifier.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="half_float_network" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OpenCV" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/half_float_network.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataset/mnist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -274,6 +315,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="OpenCV" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_pytesseract.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="project_pytesseract2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OpenCV" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_pytesseract2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -299,18 +358,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.project_pytesseract" />
-      <item index="1" class="java.lang.String" itemvalue="Python.generate_calssifier" />
-      <item index="2" class="java.lang.String" itemvalue="Python.half_float_network" />
-      <item index="3" class="java.lang.String" itemvalue="Python.train_deepnet" />
-      <item index="4" class="java.lang.String" itemvalue="Python.data_processing" />
+      <item index="1" class="java.lang.String" itemvalue="Python.train_deepnet" />
+      <item index="2" class="java.lang.String" itemvalue="Python.data_processing" />
+      <item index="3" class="java.lang.String" itemvalue="Python.mnist" />
+      <item index="4" class="java.lang.String" itemvalue="Python.project_pytesseract2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.project_pytesseract" />
-        <item index="1" class="java.lang.String" itemvalue="Python.data_processing" />
+        <item index="0" class="java.lang.String" itemvalue="Python.project_pytesseract2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.project_pytesseract" />
         <item index="2" class="java.lang.String" itemvalue="Python.train_deepnet" />
-        <item index="3" class="java.lang.String" itemvalue="Python.half_float_network" />
-        <item index="4" class="java.lang.String" itemvalue="Python.generate_calssifier" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mnist" />
+        <item index="4" class="java.lang.String" itemvalue="Python.data_processing" />
       </list>
     </recent_temporary>
   </component>
@@ -356,18 +415,24 @@
       <option name="project" value="LOCAL" />
       <updated>1526373470758</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="asdasd">
+      <created>1526389247727</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526389247727</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="791" y="23" width="1126" height="985" extended-state="0" />
+    <frame x="84" y="23" width="1288" height="985" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29662523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19642857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2584885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2354874" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -379,6 +444,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -394,174 +460,244 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_digits_detect.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/sklearn/externals/joblib/numpy_pickle_compat.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/sklearn/externals/joblib/numpy_pickle.py" />
-    <entry file="file://$PROJECT_DIR$/performRecognition.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/h5py/__init__.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/subprocess.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pytesseract/pytesseract.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/numpy/lib/shape_base.py" />
-    <entry file="file://$PROJECT_DIR$/../SEP532-이윤준교수님/02-supervised-learning.ipynb" />
-    <entry file="file://$PROJECT_DIR$/generate_calssifier.py" />
-    <entry file="file://$PROJECT_DIR$/perform_recognition_original.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/numpy/core/shape_base.py">
+    <entry file="file://$PROJECT_DIR$/images/scan-12.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/scan-13.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/scan-14.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/scan-15.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/scan-02.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/scan-06.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/scan-09.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/6_00000.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/6_00001.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/6_00002.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/6_00003.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/6_00005.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/1_00080.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/mnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+        <state relative-caret-position="241">
+          <caret line="171" column="45" lean-forward="false" selection-start-line="171" selection-start-column="45" selection-end-line="171" selection-end-column="45" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/number_th.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/photo_1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.3/python_stubs/776880377/cv2/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="1870" column="0" lean-forward="false" selection-start-line="1870" selection-start-column="0" selection-end-line="1870" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/canny.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/gray.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/nine.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/blur.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1003">
-          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="-268">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/half_float_network.py">
+    <entry file="file://$PROJECT_DIR$/common/optimizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deep_convnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="79" column="16" lean-forward="false" selection-start-line="79" selection-start-column="15" selection-end-line="79" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="128">
+          <caret line="117" column="16" lean-forward="false" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="213">
+          <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="216" column="30" lean-forward="false" selection-start-line="216" selection-start-column="30" selection-end-line="216" selection-end-column="30" />
+        <state relative-caret-position="71">
+          <caret line="272" column="13" lean-forward="true" selection-start-line="272" selection-start-column="13" selection-end-line="272" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-742">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="194">
+          <caret line="77" column="40" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/mnist.py">
+    <entry file="file://$PROJECT_DIR$/data_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="75" column="25" lean-forward="false" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+        <state relative-caret-position="264">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/digits3.png">
+    <entry file="file://$PROJECT_DIR$/train_deepnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deep_convnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_pytesseract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="151" column="49" lean-forward="false" selection-start-line="151" selection-start-column="49" selection-end-line="151" selection-end-column="49" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/+_00001.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/9.jpg">
+    <entry file="file://$PROJECT_DIR$/train_images/+_00000.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/image012.jpg">
+    <entry file="file://$PROJECT_DIR$/train_images/+_00002.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/sample02.JPG">
+    <entry file="file://$PROJECT_DIR$/train_images/+_00004.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/02Erosion.jpg">
+    <entry file="file://$PROJECT_DIR$/train_images/+_00007.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/02Gradient.jpg">
+    <entry file="file://$PROJECT_DIR$/train_images/+_00009.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/03Resize.jpg">
+    <entry file="file://$PROJECT_DIR$/train_images/+_00012.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/03Thresh.jpg">
+    <entry file="file://$PROJECT_DIR$/train_images/0_00005.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/image01.png">
+    <entry file="file://$PROJECT_DIR$/train_images/+_00049.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/er_number.jpg">
+    <entry file="file://$PROJECT_DIR$/train_images/+_00045.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/05HoughLinesP.jpg">
+    <entry file="file://$PROJECT_DIR$/train_images/0_00032.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/04Closing.jpg">
+    <entry file="file://$PROJECT_DIR$/train_images/0_00036.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/0_00063.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/6_00008.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/6_00007.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/6_00006.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/6_00013.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/6_00021.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/%_00001.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_images/%_00000.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -571,25 +707,19 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/digits3.jpg">
+    <entry file="file://$PROJECT_DIR$/image_result/02Erosion.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_deepnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/image_result/03Thresh.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_result2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/image_result/04Closing.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image_result/04Contours.jpg">
@@ -597,54 +727,22 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/sample03.png">
+    <entry file="file://$PROJECT_DIR$/image_result/02Gradient.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/sample01.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/sample02.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/sample01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/sample01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_result/snake.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing.py">
+    <entry file="file://$PROJECT_DIR$/project_pytesseract2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="925">
+          <caret line="138" column="23" lean-forward="false" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_pytesseract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/images/9.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>

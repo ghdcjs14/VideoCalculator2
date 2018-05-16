@@ -53,7 +53,9 @@ def cross_entropy_error(y, t):
         t = t.argmax(axis=1)
              
     batch_size = y.shape[0]
-    return -np.sum(np.log(y[np.arange(batch_size), t] + 1e-7)) / batch_size
+    print('t:'+str(t.astype('uint8')))
+    print(y[np.arange(batch_size),t.astype('uint8')] )
+    return -np.sum(np.log(y[np.arange(batch_size), t.astype('uint8')] + 1e-7)) / batch_size
 
 
 def softmax_loss(X, t):
